@@ -32,4 +32,9 @@ public class GarbageBin : MonoBehaviour {
 
         this.transform.position = paddlePos;
     }
+
+    void OnTriggerEnter2D(Collider2D trigger) {
+        print("Trigger " + name + " and " + trigger.name);
+        //levelManager.LoadLevel("Lose");
+    }
 }

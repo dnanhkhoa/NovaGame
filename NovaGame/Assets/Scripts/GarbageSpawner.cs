@@ -33,9 +33,9 @@ public class GarbageSpawner : MonoBehaviour
 
 			GameObject garbage = getRandomGarbage();
             GameObject clone = Instantiate(garbage, gameObject.transform.position, gameObject.transform.rotation) as GameObject;
-            //clone.GetComponent<Rigidbody2D>().velocity = new Vector2(gameObject.transform.position.x, -throwSpeed);
+            //clone.GetComponent<Rigidbody2D>().velocity = new Vector2(gameObject.transform.position.x, -7f);
             clone.SendMessage("SetForceValue", CreateForcePhysics());
-
+            //Debug.Log(clone.transform.position.z);
 
             animator.Play("LeftThrowing");
         }
