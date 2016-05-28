@@ -15,4 +15,10 @@ public class GameManager : MonoBehaviour
 	void Update () {
 		
 	}
+
+
+	void DoIdleWalker(GameObject walker)
+	{
+		walkerManager.DoIdleWalker(walker);
+	}
 }

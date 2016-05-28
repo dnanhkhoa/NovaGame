@@ -13,9 +13,14 @@ public class WalkerManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 
 
-	
+	public void DoIdleWalker(GameObject walker)
+	{
+		int walkerIndex = walkerList.FindIndex(x => x == walker);
+
+		walker.SendMessage("DoIdle");
+	}
 }

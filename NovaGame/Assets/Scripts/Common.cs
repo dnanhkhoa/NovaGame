@@ -5,6 +5,7 @@ using System.Text;
 
 public enum MovementDirection
 {
+	idleForever,
     idle,
     left,
     right

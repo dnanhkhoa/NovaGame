@@ -8,26 +8,49 @@ public class WalkerMovement : MonoBehaviour
     public float speed = 5f;
 
     public MovementDirection direction;
+
+	public float idleTime = 0;
+	float idleTimeout = 0;
+
     ScreenInfo screenInfo;
-    System.Random rand = new System.Random();
+    System.Random ra = new System.Random();
+
 
     // Use this for initialization
     void Start()
     {
-        direction = MovementDirection.idle;
         screenInfo = GameInfo.GetScreenInfo();
+
+		direction = MovementDirection.idle;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 pos = gameObject.transform.position;
+		if (direction == MovementDirection.idleForever)
+		{
+			return;
+		}
+
+
+		Vector3 pos = gameObject.transform.position;
+
+		// temporary code to make walker walking
+
+		if (pos.x > screenInfo.xRightMost)
+			direction = MovementDirection.left;
+		else if (pos.x < screenInfo.xLeftMost)
+			direction = MovementDirection.right;
+
+		//----------------------------
+        
 
         if (direction == MovementDirection.idle)
         {
-            return;
+			UpdateIdleState();
         }
-        else if (direction == MovementDirection.left) {
+
+        if (direction == MovementDirection.left) {
             pos.x -= speed * Time.deltaTime;
         }
         else if (direction == MovementDirection.right) {
@@ -37,4 +60,37 @@ public class WalkerMovement : MonoBehaviour
         // Update
         gameObject.transform.position = pos;
     }
+
+
+	void SetIdleForever(Vector3 position)
+	{
+
+	}
+
+	
+	void DoIdle()
+	{
+		float currentTime = Time.time;
+		idleTimeout = currentTime + idleTime;
+		direction = MovementDirection.idle;
+	}
+
+
+	void UpdateIdleState()
+	{
+		// post some statement
+
+		float currentTime = idleTimeout - Time.time;
+
+		if (currentTime <= 0)
+		{
+			idleTimeout = 0;
+			int choose = ra.Next(2);
+
+			if (choose == 0)
+				direction = MovementDirection.left;
+			else
+				direction = MovementDirection.right;
+		}
+	}
 }
