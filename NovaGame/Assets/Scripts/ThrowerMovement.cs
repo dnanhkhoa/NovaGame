@@ -29,9 +29,9 @@ public class ThrowerMovement : MonoBehaviour
             direction = MovementDirection.left;
 
         if (direction == MovementDirection.left)
-            pos.x -= 10f * Time.deltaTime;
+            pos.x -= 4f * Time.deltaTime;
         else if (direction == MovementDirection.right)
-            pos.x += 10f * Time.deltaTime;
+            pos.x += 4f * Time.deltaTime;
 
         gameObject.transform.position = pos;
     }
