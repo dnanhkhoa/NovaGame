@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// Done
+
 public class WalkerMovement : MonoBehaviour
 {
     enum MovementDirection
@@ -19,35 +21,27 @@ public class WalkerMovement : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        direction = (MovementDirection) 0;
+        direction = MovementDirection.idle;
         screenInfo = GameInfo.GetScreenInfo();
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Idle
+        Vector3 pos = gameObject.transform.position;
+
         if (direction == MovementDirection.idle)
         {
             return;
         }
-
-        Vector3 pos = gameObject.transform.position;
+        else if (direction == MovementDirection.left) {
+            pos.x -= speed * Time.deltaTime;
+        }
+        else if (direction == MovementDirection.right) {
+            pos.x += speed * Time.deltaTime;
+        }
         
-        if (pos.x < screenInfo.xLeftMost)
-        {
-            direction = MovementDirection.right;
-        }
-        else if (pos.x > screenInfo.xRightMost)
-        {
-            direction = MovementDirection.left;
-        }
-
-        if (direction == MovementDirection.left)
-            pos.x -= 1 * Time.deltaTime;
-        else if (direction == MovementDirection.right)
-            pos.x += 1 * Time.deltaTime;
-
+        // Update
         gameObject.transform.position = pos;
     }
 }

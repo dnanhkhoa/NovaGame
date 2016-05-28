@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+// 
+
 [System.Serializable]
 struct ScreenInfo
 {
@@ -24,10 +26,10 @@ class GameInfo
 
         info.xLeftMost = leftTop.x;
         info.xRightMost = rightBottom.x;
-        info.width = info.xRightMost - info.xLeftMost;
-
         info.yTopMost = leftTop.y;
         info.yBottomMost = rightBottom.y;
+
+        info.width = info.xRightMost - info.xLeftMost;
         info.height = info.yTopMost - info.yBottomMost;
 
         return info;
