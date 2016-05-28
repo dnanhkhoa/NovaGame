@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a2d8bd9f13747fb4391b4ee561bbca93
-timeCreated: 1464434323
+timeCreated: 1464441159
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -65,187 +65,196 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 58.8
-        height: 80
+        width: 58.5
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -16.5, y: 9}
-        - {x: -13.5, y: 5}
-        - {x: -6.5, y: -28}
-        - {x: 1.5, y: -28}
-        - {x: 8.5, y: -20}
-        - {x: 8.5, y: 26}
-        - {x: -11.5, y: 26}
-        - {x: -16.5, y: 25}
+      - - {x: -25.5, y: 27}
+        - {x: -25.5, y: 12}
+        - {x: -22.5, y: 7}
+        - {x: -15.5, y: -24}
+        - {x: -13.5, y: -32}
+        - {x: 4.5, y: -32}
+        - {x: 15.5, y: -27}
+        - {x: 15.5, y: 27}
+        - {x: 8.5, y: 37}
+        - {x: -6.5, y: 37}
+        - {x: -23.5, y: 33}
     - name: Score_1
       rect:
         serializedVersion: 2
         x: 58
         y: 0
-        width: 58.8
-        height: 80
+        width: 58.5
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -15.5, y: 26}
-        - {x: -19.5, y: 21}
-        - {x: -20.5, y: -14}
-        - {x: -20.5, y: -28}
-        - {x: 16.5, y: -28}
-        - {x: 16.5, y: 23}
-        - {x: 8.5, y: 26}
+      - - {x: -28.5, y: 36}
+        - {x: -28.5, y: -26}
+        - {x: -16.5, y: -32}
+        - {x: 22.5, y: -32}
+        - {x: 22.5, y: 23}
+        - {x: 19.5, y: 36}
     - name: Score_2
       rect:
         serializedVersion: 2
         x: 116
         y: 0
-        width: 58.8
-        height: 80
+        width: 58.5
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -19.5, y: 26}
-        - {x: -19.5, y: -27}
-        - {x: -18.5, y: -28}
-        - {x: 7.5, y: -28}
-        - {x: 16.5, y: -21}
-        - {x: 16.5, y: 23}
-        - {x: 11.5, y: 26}
+      - - {x: -27.5, y: 36}
+        - {x: -27.5, y: -27}
+        - {x: -25.5, y: -33}
+        - {x: 15.5, y: -33}
+        - {x: 22.5, y: -29}
+        - {x: 22.5, y: 21}
+        - {x: 21.5, y: 24}
+        - {x: 16.5, y: 36}
     - name: Score_3
       rect:
         serializedVersion: 2
         x: 174
         y: 0
-        width: 58.8
-        height: 80
+        width: 58.5
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -0.5, y: 25}
-        - {x: -21.5, y: -5}
-        - {x: -21.5, y: -12}
-        - {x: -1.5, y: -28}
-        - {x: 13.5, y: -28}
-        - {x: 19.5, y: -20}
-        - {x: 19.5, y: 2}
-        - {x: 8.5, y: 25}
+      - - {x: 10.5, y: 37}
+        - {x: -4.5, y: 37}
+        - {x: -29.5, y: 7}
+        - {x: -29.5, y: -13}
+        - {x: -4.5, y: -32}
+        - {x: 17.5, y: -32}
+        - {x: 26.5, y: -18}
+        - {x: 26.5, y: 2}
+        - {x: 16.5, y: 34}
     - name: Score_4
       rect:
         serializedVersion: 2
         x: 232
         y: 0
-        width: 58.8
-        height: 80
+        width: 58.5
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -7.5, y: 25}
-        - {x: -17.5, y: 14}
-        - {x: -17.5, y: -28}
-        - {x: 9.5, y: -28}
-        - {x: 17.5, y: -24}
-        - {x: 17.5, y: 25}
+      - - {x: -20.5, y: 37}
+        - {x: -26.5, y: 17}
+        - {x: -26.5, y: -27}
+        - {x: -23.5, y: -33}
+        - {x: 18.5, y: -33}
+        - {x: 23.5, y: -32}
+        - {x: 23.5, y: 37}
     - name: Score_5
       rect:
         serializedVersion: 2
         x: 290
         y: 0
-        width: 58.8
-        height: 80
+        width: 58.5
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -10.5, y: 26}
-        - {x: -18.5, y: 15}
-        - {x: -18.5, y: -19}
-        - {x: -12.5, y: -28}
-        - {x: 19.5, y: -28}
-        - {x: 19.5, y: 26}
+      - - {x: -20.5, y: 36}
+        - {x: -22.5, y: 35}
+        - {x: -26.5, y: 19}
+        - {x: -26.5, y: -20}
+        - {x: -12.5, y: -33}
+        - {x: 17.5, y: -33}
+        - {x: 26.5, y: -17}
+        - {x: 26.5, y: 32}
+        - {x: 17.5, y: 36}
     - name: Score_6
       rect:
         serializedVersion: 2
         x: 348
         y: 0
-        width: 58.8
-        height: 80
+        width: 58.5
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: 19.5, y: 25}
-        - {x: -16.5, y: 25}
-        - {x: -18.5, y: 23}
-        - {x: -18.5, y: 17}
-        - {x: -13.5, y: 12}
-        - {x: -13.5, y: -27}
-        - {x: -9.5, y: -28}
-        - {x: -1.5, y: -28}
-        - {x: 7.5, y: -12}
-        - {x: 19.5, y: 11}
+      - - {x: -20.5, y: 36}
+        - {x: -22.5, y: 35}
+        - {x: -26.5, y: 34}
+        - {x: -26.5, y: -23}
+        - {x: -20.5, y: -32}
+        - {x: 2.5, y: -32}
+        - {x: 26.5, y: 1}
+        - {x: 26.5, y: 32}
+        - {x: 23.5, y: 36}
     - name: Score_7
       rect:
         serializedVersion: 2
         x: 406
         y: 0
-        width: 58.8
-        height: 80
+        width: 58.5
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -13.5, y: 26}
-        - {x: -18.5, y: 19}
-        - {x: -18.5, y: -22}
-        - {x: -12.5, y: -28}
-        - {x: 10.5, y: -28}
-        - {x: 19.5, y: -25}
-        - {x: 19.5, y: 23}
-        - {x: 12.5, y: 26}
+      - - {x: 19.5, y: 36}
+        - {x: -16.5, y: 36}
+        - {x: -26.5, y: 31}
+        - {x: -26.5, y: -24}
+        - {x: -20.5, y: -33}
+        - {x: 15.5, y: -33}
+        - {x: 25.5, y: -28}
+        - {x: 25.5, y: 20}
+        - {x: 24.5, y: 27}
     - name: Score_8
       rect:
         serializedVersion: 2
         x: 464
         y: 0
-        width: 58.8
-        height: 80
+        width: 58.5
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -15.5, y: 26}
-        - {x: -18.5, y: 19}
-        - {x: -18.5, y: -19}
-        - {x: -14.5, y: -28}
-        - {x: 15.5, y: -28}
-        - {x: 20.5, y: -20}
-        - {x: 20.5, y: 21}
-        - {x: 15.5, y: 26}
+      - - {x: -23.5, y: 36}
+        - {x: -27.5, y: 33}
+        - {x: -27.5, y: -22}
+        - {x: -24.5, y: -33}
+        - {x: 26.5, y: -33}
+        - {x: 26.5, y: 36}
+      - - {x: 23.5, y: -25}
+        - {x: 26.5, y: -24}
+        - {x: 26.5, y: -21}
+        - {x: 23.5, y: -20}
+        - {x: 21.5, y: -22}
     - name: Score_9
       rect:
         serializedVersion: 2
         x: 522
         y: 0
-        width: 58.8
-        height: 80
+        width: 58.5
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -7.5, y: 26}
-        - {x: -18.5, y: 23}
-        - {x: -18.5, y: -22}
-        - {x: -12.5, y: -28}
-        - {x: 11.5, y: -28}
-        - {x: 20.5, y: -25}
-        - {x: 20.5, y: 20}
-        - {x: 14.5, y: 26}
+      - - {x: -26.5, y: 36}
+        - {x: -26.5, y: -27}
+        - {x: -18.5, y: -33}
+        - {x: 27.5, y: -33}
+        - {x: 27.5, y: 27}
+        - {x: 19.5, y: 36}
     outline: []
   spritePackingTag: 
   userData: 

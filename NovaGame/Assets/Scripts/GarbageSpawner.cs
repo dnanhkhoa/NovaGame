@@ -9,7 +9,7 @@ public class GarbageSpawner : MonoBehaviour
 	public List<GameObject> GarbageList;
 
 	float nextSpawnTime = 0;
-    float throwSpeed = 10f;
+    Animator animator;
 
     delegate MyForcePhysics ForceCreatetionFunc();
     List<ForceCreatetionFunc> forceCreationFuncList = new List<ForceCreatetionFunc>();
@@ -20,6 +20,7 @@ public class GarbageSpawner : MonoBehaviour
 	void Start () {
         forceCreationFuncList.Add(CreateForcePhysicsType1);
         forceCreationFuncList.Add(CreateForcePhysicsType2);
+        animator = GetComponent<Animator>();
 	}
 	
 	// Update is called once per frame
@@ -34,6 +35,8 @@ public class GarbageSpawner : MonoBehaviour
             GameObject clone = Instantiate(garbage, gameObject.transform.position, gameObject.transform.rotation) as GameObject;
             //clone.GetComponent<Rigidbody2D>().velocity = new Vector2(gameObject.transform.position.x, -throwSpeed);
             clone.SendMessage("SetForceValue", CreateForcePhysics());
+
+            animator.Play("LeftThrowing");
         }
 	}
 
