@@ -45,19 +45,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\MenuController.cs" />
      <Compile Include="Assets\Scripts\BackgroundManager.cs" />
      <Compile Include="Assets\Scripts\Common.cs" />
+     <Compile Include="Assets\Scripts\DisplayScore.cs" />
      <Compile Include="Assets\Scripts\ForcePhysics.cs" />
      <Compile Include="Assets\Scripts\GameInfo.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\GarbageBin.cs" />
+     <Compile Include="Assets\Scripts\GarbageBinReceiver.cs" />
      <Compile Include="Assets\Scripts\GarbageMovement.cs" />
      <Compile Include="Assets\Scripts\GarbageSpawner.cs" />
      <Compile Include="Assets\Scripts\LevelManager.cs" />
      <Compile Include="Assets\Scripts\LoseCollider.cs" />
      <Compile Include="Assets\Scripts\ScoreManager.cs" />
+     <Compile Include="Assets\Scripts\SoundPlayer.cs" />
      <Compile Include="Assets\Scripts\ThrawerManager.cs" />
      <Compile Include="Assets\Scripts\ThrowerMovement.cs" />
+     <Compile Include="Assets\Scripts\WalkerCollision.cs" />
      <Compile Include="Assets\Scripts\WalkerManager.cs" />
      <Compile Include="Assets\Scripts\WalkerMovement.cs" />
  <Reference Include="UnityEngine.UI">

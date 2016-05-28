@@ -93,8 +93,4 @@ public class WalkerMovement : MonoBehaviour
 				direction = MovementDirection.right;
 		}
 	}
-
-    void OnCollisionEnter2D(Collision2D collision) {
-        print("Collision");
-    }
 }

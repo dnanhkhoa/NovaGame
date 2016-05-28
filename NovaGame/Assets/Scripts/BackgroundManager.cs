@@ -4,27 +4,15 @@ using System.Collections.Generic;
 
 public class BackgroundManager : MonoBehaviour {
 
-    public List<Sprite> spriteList = new List<Sprite>();
+    public Sprite[] backgrounds;
+    System.Random rand = new System.Random();
 
 	// Use this for initialization
 	void Start () {
-	
+        (GetComponent<Renderer>() as SpriteRenderer).sprite = backgrounds[rand.Next(backgrounds.Length)];
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        /*
-        float t = Time.time;
-
-        if (t > nextTime)
-        {
-            nextTime += 5;
-
-            currentIndex = (currentIndex + 1) % spriteList.Count;
-
-            SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
-            spriteRenderer.sprite = spriteList[currentIndex];
-        }
-        */
 	}
 }

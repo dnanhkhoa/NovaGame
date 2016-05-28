@@ -58,7 +58,7 @@ public class GarbageSpawner : MonoBehaviour
         float deltaTime = Time.deltaTime;
         Vector3 objPos = gameObject.transform.position;
 
-        vel = new MyVelocity(3f * deltaTime, -6f * deltaTime);
+        vel = new MyVelocity(2.5f * deltaTime, -5f * deltaTime);
         if (objPos.x < 0)
             vel.x = -vel.x;
 
@@ -78,7 +78,7 @@ public class GarbageSpawner : MonoBehaviour
         vel = new MyVelocity(0, 0, new Vector2(0, -0.2f * deltaTime));
         f.PushNewVelocity(vel);
 
-        vel = new MyVelocity(3f * deltaTime, 3f * deltaTime);
+        vel = new MyVelocity(2.5f * deltaTime, 5f * deltaTime);
         if (objPos.x >= 0)
             vel.x = -vel.x;
 

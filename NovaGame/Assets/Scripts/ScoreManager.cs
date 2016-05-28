@@ -5,7 +5,7 @@ using System.Text;
 
 public class ScoreManager
 {
-	static int score = 0;
+	public static int score = 0;
 
 	public static void Update(int addValue)
 	{
