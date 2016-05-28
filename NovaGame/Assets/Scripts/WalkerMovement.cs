@@ -5,16 +5,9 @@ using System.Collections;
 
 public class WalkerMovement : MonoBehaviour
 {
-    enum MovementDirection
-    {
-        idle,
-        left,
-        right
-    }
-
     public float speed = 5f;
 
-    MovementDirection direction;
+    public MovementDirection direction;
     ScreenInfo screenInfo;
     System.Random rand = new System.Random();
 
