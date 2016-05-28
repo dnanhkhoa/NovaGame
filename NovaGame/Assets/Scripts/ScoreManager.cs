@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using UnityEngine;
+
+// Done
 
 public class ScoreManager
 {
@@ -14,11 +13,15 @@ public class ScoreManager
 
 	public static int GetHightscore()
 	{
-		return 0;
+        return PlayerPrefs.GetInt("HighScore", 0);
 	}
 
 	public static void SetHighScore()
 	{
-
+        int highScore = PlayerPrefs.GetInt("HighScore", 0);
+        if (score > highScore)
+        {
+            PlayerPrefs.SetInt("HighScore", score);
+        }
 	}
 }
