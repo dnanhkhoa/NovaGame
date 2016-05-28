@@ -62,17 +62,17 @@ public class WalkerMovement : MonoBehaviour
     }
 
 
-	void SetIdleForever(Vector3 position)
-	{
-
-	}
-
-	
-	void DoIdle()
+	void SetIdle()
 	{
 		float currentTime = Time.time;
 		idleTimeout = currentTime + idleTime;
 		direction = MovementDirection.idle;
+	}
+
+	void SetIdleForever(Vector3 position)
+	{
+		gameObject.transform.position = position;
+		direction = MovementDirection.idleForever;
 	}
 
 

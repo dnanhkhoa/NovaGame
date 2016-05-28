@@ -2,8 +2,8 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class LevelManager : MonoBehaviour {
-
+class LevelManager
+{
     public void LoadLevel(string name) {
         Debug.Log("Request for: " + name);
         SceneManager.LoadScene(name);

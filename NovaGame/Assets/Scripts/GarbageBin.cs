@@ -34,7 +34,6 @@ public class GarbageBin : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D trigger) {
-        print("Trigger " + name + " and " + trigger.name);
-        //levelManager.LoadLevel("Lose");
+        //print("Trigger " + name + " and " + trigger.name);
     }
 }

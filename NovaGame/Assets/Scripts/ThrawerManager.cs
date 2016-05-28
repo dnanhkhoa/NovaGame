@@ -2,7 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class ThrawerManager : MonoBehaviour {
+public class ThrawerManager
+{
 
 	public List<GameObject> thrawerList = new List<GameObject>();
 

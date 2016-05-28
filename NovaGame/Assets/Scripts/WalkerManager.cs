@@ -2,7 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class WalkerManager : MonoBehaviour {
+public class WalkerManager
+{
 
 	public List<GameObject> walkerList = new List<GameObject>();
 
@@ -17,10 +18,16 @@ public class WalkerManager : MonoBehaviour {
 	}
 
 
-	public void DoIdleWalker(GameObject walker)
+	public void SetIdleWalker(GameObject walker)
 	{
 		int walkerIndex = walkerList.FindIndex(x => x == walker);
+		walker.SendMessage("SetIdle");
+	}
 
-		walker.SendMessage("DoIdle");
+
+	public void SetIdleForever(GameObject walker, Vector3 position)
+	{
+		int walkerIndex = walkerList.FindIndex(x => x == walker);
+		walker.SendMessage("SetIdleForever", position);
 	}
 }
