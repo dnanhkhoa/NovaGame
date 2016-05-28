@@ -10,6 +10,6 @@ public class LoseCollider : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D trigger) {
         //Debug.Log("Lose" + trigger.name);
 		GameObject managerObject = GameObject.Find("Manager");
-		managerObject.SendMessage("InvokeGameOver");
+		//managerObject.SendMessage("InvokeGameOver");
     }
 }
