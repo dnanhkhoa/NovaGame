@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{5C39A1F3-2616-B6CD-14D9-3D2AD4B97A41}") = "NovaGame", "Assembly-CSharp.csproj", "{1B4544F2-4D3E-7753-0C8B-50641F817045}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B4544F2-4D3E-7753-0C8B-50641F817045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B4544F2-4D3E-7753-0C8B-50641F817045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B4544F2-4D3E-7753-0C8B-50641F817045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B4544F2-4D3E-7753-0C8B-50641F817045}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
